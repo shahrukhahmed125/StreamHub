@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0B0D12;
+    --bg-secondary: #12151D;
+    --bg-card: #181C26;
+    --bg-elevated: #202635;
+    --accent-primary: #7C5CFC;
+    --accent-hover: #9278FF;
+    --text-primary: #F5F7FA;
+    --text-secondary: #A3AABD;
+    --border-color: #2A3040;
+    --color-success: #35C98A;
+    --color-error: #F06464;
+  }
+
+  body {
+    background-color: #0B0D12;
+    color: #F5F7FA;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0D12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A3040;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7C5CFC;
+}
+
+/* Video aspect ratio helper */
+.aspect-video-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-shorts-9-16 {
+  aspect-ratio: 9 / 16;
+}
